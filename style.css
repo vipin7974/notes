@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.main .navbar{
+    padding: 0 100px;
+}
+#logo{
+    font-family: 'Piedra', cursive;
+    color:#28B463;
+    font-weight: 500;
+    font-size: 30px;
+}
+.navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    padding: 0 50px;
+}
+.navbar-nav .nav-item a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    transition: all 0.3s linear;
+}
+#active{
+  color:#28B463; /* Anything you want */
+}
+.navbar-nav .nav-item a:hover{
+    font-size: 30px;
+}
+#img-container{
+	background-image:url('hero.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background: relative;
+    font-family: 'Roboto', sans-serif;
+	
+}
+.inner-container{
+    position: absolute;
+    top:25%;
+    left:15%;
+    width: 450px;
+    height: 400px;
+    color: black;	
+}
+.inner-container h1{
+    color:#28B463;
+
+}
+.inner-container p{
+	padding-top: 20px;
+	display: block;
+	width: 250px;
+	opacity: 0.9;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	letter-spacing: 0.3em;
+}
+.inner-containe a{
+    text-decoration: none;
+    text-align: center;
+}
+.inner-container .btn{
+	width: 150px;
+	height: 50px;
+	color: white;
+	margin-top: 30px;
+    text-align: center;
+    background-color:#28B463;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+.btn:hover{
+    border: 2px solid #28B463;
+    background-color: transparent;
+    color:#28B463;
+}
+.about-main{
+    width: 100%;
+    height: auto;
+}
+.about-inner{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.about-inner h1{
+    font-weight: 800;
+    color: #28B463;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+}
+.about-inner .about-row{
+    margin-top: 100px;
+}
+.img-col img{
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-row .text{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+.about-row .text h2{
+    font-weight: 500;
+    color:#28B463;
+}
+.about-row .text p{
+    letter-spacing: 0.2em;
+    width: 50%;
+}
+.about-row .first p{
+    letter-spacing: 0.2em;
+    width: 50%;
+    position: absolute;
+    left: 20%;
+}
+.about-row .first h2{
+    font-weight: 500;
+    color:#28B463;
+}
+
+@media only screen and (max-width: 600px){
+    .main .navbar{
+        padding: 0;
+    }
+    #img-container {
+        background-image:url('hero-m.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background: relative;  
+    }
+    .inner-container{
+        position: absolute;
+        width: 300px;
+        color:black;
+    }
+    .img-col img{
+        width: 300px;
+        height: 300px;
+    }
+    .about-row .text{
+        text-align: center;
+    }
+    .about-row .text p{
+        text-align: center;
+        width: 100%;
+    }
+    .first{
+        order: 2;
+    }
+    .second img{
+        width: 300px;
+        height: 300px;
+    }
+    .second{
+        order:1;
+    }
+
+    
+    
+}
